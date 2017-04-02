@@ -27,3 +27,7 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+class registration(models.Model):
+    name = models.CharField(max_length=10)
+    fullname = models.CharField(max_length=15)
